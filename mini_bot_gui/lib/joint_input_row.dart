@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ocadi_bot_gui/app_constants/colors.dart' as ocadi_colors;
+import 'package:ocadi_bot_gui/app_constants/colors.dart' as mini_colors;
 import 'package:ocadi_bot_gui/backend_services/gui_streamer_bridge.dart';
 import 'package:universal_io/io.dart';
 import 'dart:convert';
@@ -17,7 +17,7 @@ import 'dart:convert';
             labelText,
             style: GoogleFonts.lexend(
                 textStyle: const TextStyle(
-                    color: ocadi_colors.notQuiteBlack,
+                    color: mini_colors.notQuiteBlack,
                     fontSize: 30,
                     fontWeight: FontWeight.bold)),
           ),
@@ -34,18 +34,18 @@ import 'dart:convert';
             child: IconButton(
               style: const ButtonStyle(
                   backgroundColor:
-                      MaterialStatePropertyAll(ocadi_colors.darkRoyalPurple)),
+                      MaterialStatePropertyAll(mini_colors.darkRoyalPurple)),
               onPressed: () {},
               icon: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(
                   leftIcon,
-                  color: ocadi_colors.offWhite,
+                  color: mini_colors.offWhite,
                   size: 45.0,
                 ),
               ),
-              hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-              highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+              hoverColor: mini_colors.darkRoyalPurpleHighlight,
+              highlightColor: mini_colors.darkRoyalPurpleHighlight,
             ),
           ),
         ),
@@ -61,17 +61,17 @@ import 'dart:convert';
             child: IconButton(
               style: const ButtonStyle(
                   backgroundColor:
-                      MaterialStatePropertyAll(ocadi_colors.darkRoyalPurple)),
+                      MaterialStatePropertyAll(mini_colors.darkRoyalPurple)),
               onPressed: () {},
               icon: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(
                   rightIcon,
-                  color: ocadi_colors.offWhite,
+                  color: mini_colors.offWhite,
                   size: 45.0,
                 ),
               ),
-              hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
+              hoverColor: mini_colors.darkRoyalPurpleHighlight,
             ),
           ),
         ),

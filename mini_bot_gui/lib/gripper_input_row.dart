@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ocadi_bot_gui/app_constants/colors.dart' as ocadi_colors;
+import 'package:ocadi_bot_gui/app_constants/colors.dart' as mini_colors;
 import 'package:ocadi_bot_gui/backend_services/gui_streamer_bridge.dart';
 import 'package:universal_io/io.dart';
 import 'dart:convert';
@@ -16,7 +16,7 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
           "Gripper Controls",
           style: GoogleFonts.lexend(
               textStyle: const TextStyle(
-                  color: ocadi_colors.notQuiteBlack,
+                  color: mini_colors.notQuiteBlack,
                   fontSize: 30,
                   fontWeight: FontWeight.bold)),
         ),
@@ -40,13 +40,13 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                           icon: const Icon(
                             Icons.swap_horiz,
                             size: 35.0,
-                            color: ocadi_colors.offWhite,
+                            color: mini_colors.offWhite,
                           ),
                           style: const ButtonStyle(
                               backgroundColor: MaterialStatePropertyAll(
-                                  ocadi_colors.darkRoyalPurple)),
-                          hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-                          highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+                                  mini_colors.darkRoyalPurple)),
+                          hoverColor: mini_colors.darkRoyalPurpleHighlight,
+                          highlightColor: mini_colors.darkRoyalPurpleHighlight,
                         ),
                       ),
                       Text(
@@ -54,7 +54,7 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                         "Move\nOpen",
                         style: GoogleFonts.lexend(
                             textStyle: const TextStyle(
-                                color: ocadi_colors.notQuiteBlack,
+                                color: mini_colors.notQuiteBlack,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold)),
                       ),
@@ -66,19 +66,19 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                   icon: const Icon(
                     Icons.unfold_more,
                     size: 35.0,
-                    color: ocadi_colors.offWhite,
+                    color: mini_colors.offWhite,
                   ),
                   style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(
-                          ocadi_colors.darkRoyalPurple)),
-                  hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-                  highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+                          mini_colors.darkRoyalPurple)),
+                  hoverColor: mini_colors.darkRoyalPurpleHighlight,
+                  highlightColor: mini_colors.darkRoyalPurpleHighlight,
                 ),
                 Text(
                   "Open",
                   style: GoogleFonts.lexend(
                       textStyle: const TextStyle(
-                          color: ocadi_colors.notQuiteBlack,
+                          color: mini_colors.notQuiteBlack,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
                 ),
@@ -101,13 +101,13 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                           icon: const Icon(
                             Icons.compare_arrows,
                             size: 35.0,
-                            color: ocadi_colors.offWhite,
+                            color: mini_colors.offWhite,
                           ),
                           style: const ButtonStyle(
                               backgroundColor: MaterialStatePropertyAll(
-                                  ocadi_colors.darkRoyalPurple)),
-                          hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-                          highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+                                  mini_colors.darkRoyalPurple)),
+                          hoverColor: mini_colors.darkRoyalPurpleHighlight,
+                          highlightColor: mini_colors.darkRoyalPurpleHighlight,
                         ),
                       ),
                       Text(
@@ -115,7 +115,7 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                         textAlign: TextAlign.center,
                         style: GoogleFonts.lexend(
                             textStyle: const TextStyle(
-                                color: ocadi_colors.notQuiteBlack,
+                                color: mini_colors.notQuiteBlack,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold)),
                       ),
@@ -128,20 +128,20 @@ Widget inputRow(context, MoveGripperFunc moveGripper,
                     icon: const Icon(
                       Icons.unfold_less,
                       size: 35.0,
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                     ),
                     style: const ButtonStyle(
                         backgroundColor: MaterialStatePropertyAll(
-                            ocadi_colors.darkRoyalPurple)),
-                    hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-                    highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+                            mini_colors.darkRoyalPurple)),
+                    hoverColor: mini_colors.darkRoyalPurpleHighlight,
+                    highlightColor: mini_colors.darkRoyalPurpleHighlight,
                   ),
                 ),
                 Text(
                   "Close",
                   style: GoogleFonts.lexend(
                       textStyle: const TextStyle(
-                          color: ocadi_colors.notQuiteBlack,
+                          color: mini_colors.notQuiteBlack,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
                 ),
@@ -175,7 +175,7 @@ Widget setPositionButtons(SetGripperPosFunc setGripper) {
           style: TextButton.styleFrom(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)),
-            backgroundColor: ocadi_colors.darkRoyalPurple,
+            backgroundColor: mini_colors.darkRoyalPurple,
           ),
           onPressed: () => setGripper(GripperConfigurations.gc_o),
           child: Padding(
@@ -184,7 +184,7 @@ Widget setPositionButtons(SetGripperPosFunc setGripper) {
               'Set Open Position',
               style: GoogleFonts.lexend(
                   textStyle: const TextStyle(
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                       fontSize: 16,
                       fontWeight: FontWeight.w600)),
             ),
@@ -197,7 +197,7 @@ Widget setPositionButtons(SetGripperPosFunc setGripper) {
           style: TextButton.styleFrom(
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10.0)),
-            backgroundColor: ocadi_colors.darkRoyalPurple,
+            backgroundColor: mini_colors.darkRoyalPurple,
           ),
           onPressed: () => setGripper(GripperConfigurations.gc_c),
           child: Padding(
@@ -206,7 +206,7 @@ Widget setPositionButtons(SetGripperPosFunc setGripper) {
               'Set Closed Position',
               style: GoogleFonts.lexend(
                   textStyle: const TextStyle(
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                       fontSize: 16,
                       fontWeight: FontWeight.w600)),
             ),

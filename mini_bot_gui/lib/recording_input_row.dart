@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ocadi_bot_gui/app_constants/colors.dart' as ocadi_colors;
+import 'package:ocadi_bot_gui/app_constants/colors.dart' as mini_colors;
 import 'package:universal_io/io.dart';
 import 'dart:convert';
 
@@ -80,7 +80,7 @@ Widget inputRow(
           textAlign: TextAlign.center,
           style: GoogleFonts.lexend(
               textStyle: const TextStyle(
-                  color: ocadi_colors.notQuiteBlack,
+                  color: mini_colors.notQuiteBlack,
                   fontSize: 30,
                   fontWeight: FontWeight.bold)),
         ),
@@ -103,28 +103,28 @@ Widget inputRow(
                     child: Icon(
                       Icons.play_circle_outline,
                       size: 40.0,
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                     ),
                   ),
                   style: ButtonStyle(
                       backgroundColor: playButtonEnabled
                           ? const MaterialStatePropertyAll(
-                              ocadi_colors.darkRoyalPurple)
+                              mini_colors.darkRoyalPurple)
                           : const MaterialStatePropertyAll(
-                              ocadi_colors.lightPurpleGrey)),
+                              mini_colors.lightPurpleGrey)),
                   hoverColor: playButtonEnabled
-                      ? ocadi_colors.darkRoyalPurpleHighlight
-                      : ocadi_colors.lightPurpleGrey,
+                      ? mini_colors.darkRoyalPurpleHighlight
+                      : mini_colors.lightPurpleGrey,
                   highlightColor: playButtonEnabled
-                      ? ocadi_colors.darkRoyalPurpleHighlight
-                      : ocadi_colors.lightPurpleGrey,
+                      ? mini_colors.darkRoyalPurpleHighlight
+                      : mini_colors.lightPurpleGrey,
                 ),
                 Text(
                   textAlign: TextAlign.center,
                   "Play",
                   style: GoogleFonts.lexend(
                       textStyle: const TextStyle(
-                          color: ocadi_colors.notQuiteBlack,
+                          color: mini_colors.notQuiteBlack,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
                 ),
@@ -142,21 +142,21 @@ Widget inputRow(
                     child: Icon(
                       Icons.add_location,
                       size: 40.0,
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                     ),
                   ),
                   style: const ButtonStyle(
                       backgroundColor: MaterialStatePropertyAll(
-                          ocadi_colors.darkRoyalPurple)),
-                  hoverColor: ocadi_colors.darkRoyalPurpleHighlight,
-                  highlightColor: ocadi_colors.darkRoyalPurpleHighlight,
+                          mini_colors.darkRoyalPurple)),
+                  hoverColor: mini_colors.darkRoyalPurpleHighlight,
+                  highlightColor: mini_colors.darkRoyalPurpleHighlight,
                 ),
                 Text(
                   textAlign: TextAlign.center,
                   "Add Waypoint",
                   style: GoogleFonts.lexend(
                       textStyle: const TextStyle(
-                          color: ocadi_colors.notQuiteBlack,
+                          color: mini_colors.notQuiteBlack,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
                 ),
@@ -180,27 +180,27 @@ Widget inputRow(
                     child: Icon(
                       recordButtonIcon,
                       size: 40.0,
-                      color: ocadi_colors.offWhite,
+                      color: mini_colors.offWhite,
                     ),
                   ),
                   style: ButtonStyle(
                       backgroundColor: isRecording
                           ? MaterialStatePropertyAll(Colors.red[600])
                           : const MaterialStatePropertyAll(
-                              ocadi_colors.darkRoyalPurple)),
+                              mini_colors.darkRoyalPurple)),
                   hoverColor: isRecording
                       ? Colors.red[300]
-                      : ocadi_colors.darkRoyalPurpleHighlight,
+                      : mini_colors.darkRoyalPurpleHighlight,
                   highlightColor: isRecording
                       ? Colors.red[300]
-                      : ocadi_colors.darkRoyalPurpleHighlight,
+                      : mini_colors.darkRoyalPurpleHighlight,
                 ),
                 Text(
                   textAlign: TextAlign.center,
                   "Clear",
                   style: GoogleFonts.lexend(
                       textStyle: const TextStyle(
-                          color: ocadi_colors.notQuiteBlack,
+                          color: mini_colors.notQuiteBlack,
                           fontSize: 15,
                           fontWeight: FontWeight.bold)),
                 ),

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ocadi_bot_gui/app_constants/colors.dart' as ocadi_colors;
+import 'package:ocadi_bot_gui/app_constants/colors.dart' as mini_colors;
 import 'package:ocadi_bot_gui/backend_services/gui_streamer_bridge.dart';
 
 import 'joint_input_row.dart' as joint;
@@ -67,7 +67,7 @@ class Homepage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 35,
                         fontWeight: FontWeight.bold)),
               ),
@@ -77,7 +77,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
             Padding(
                 padding: EdgeInsets.all(row_padding),
@@ -157,7 +157,7 @@ class Homepage extends StatelessWidget {
                 "Movement Speed",
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 24,
                         fontWeight: FontWeight.w500)),
               ),
@@ -168,7 +168,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
             gripper_control.inputRow(context, bridge.setGripperMovement,
                 bridge.toggleGripper, bridge.configureGripper),
@@ -178,7 +178,7 @@ class Homepage extends StatelessWidget {
                 "Gripper Speed",
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 24,
                         fontWeight: FontWeight.w500)),
               ),
@@ -189,7 +189,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
             Padding(
                 padding: const EdgeInsets.all(10.0),
@@ -204,7 +204,7 @@ class Homepage extends StatelessWidget {
                 "Replay Speed",
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 24,
                         fontWeight: FontWeight.w500)),
               ),
@@ -227,7 +227,7 @@ class Homepage extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 35,
                         fontWeight: FontWeight.bold)),
               ),
@@ -237,7 +237,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -344,7 +344,7 @@ class Homepage extends StatelessWidget {
                 "Movement Speed",
                 style: GoogleFonts.lexend(
                     textStyle: const TextStyle(
-                        color: ocadi_colors.notQuiteBlack,
+                        color: mini_colors.notQuiteBlack,
                         fontSize: 24,
                         fontWeight: FontWeight.w500)),
               ),
@@ -355,7 +355,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -375,7 +375,7 @@ class Homepage extends StatelessWidget {
                           "Gripper Speed",
                           style: GoogleFonts.lexend(
                               textStyle: const TextStyle(
-                                  color: ocadi_colors.notQuiteBlack,
+                                  color: mini_colors.notQuiteBlack,
                                   fontSize: 24,
                                   fontWeight: FontWeight.w500)),
                         ),
@@ -400,7 +400,7 @@ class Homepage extends StatelessWidget {
                           "Replay Speed",
                           style: GoogleFonts.lexend(
                               textStyle: const TextStyle(
-                                  color: ocadi_colors.notQuiteBlack,
+                                  color: mini_colors.notQuiteBlack,
                                   fontSize: 24,
                                   fontWeight: FontWeight.w500)),
                         ),
@@ -417,7 +417,7 @@ class Homepage extends StatelessWidget {
               thickness: 2,
               indent: 42,
               endIndent: 42,
-              color: ocadi_colors.darkRoyalPurpleHighlight,
+              color: mini_colors.darkRoyalPurpleHighlight,
             ),
           ]),
     );

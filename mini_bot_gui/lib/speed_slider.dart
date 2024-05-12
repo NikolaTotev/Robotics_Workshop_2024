@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ocadi_bot_gui/app_constants/colors.dart' as ocadi_colors;
+import 'package:ocadi_bot_gui/app_constants/colors.dart' as mini_colors;
 import 'package:ocadi_bot_gui/backend_services/gui_streamer_bridge.dart';
 
 class SpeedSlider extends StatefulWidget {
@@ -28,8 +28,8 @@ class _SpeedSliderState extends State<SpeedSlider> {
         min: widget.min,
         max: widget.max,
         divisions: widget.divisions,        
-        thumbColor: ocadi_colors.darkRoyalPurple,
-        activeColor: ocadi_colors.lightRoyalPurpleHighlight,                
+        thumbColor: mini_colors.darkRoyalPurple,
+        activeColor: mini_colors.lightRoyalPurpleHighlight,                
         label: _currentSliderValue.toStringAsFixed(1),
         onChanged: (double value) {
           setState(() {
