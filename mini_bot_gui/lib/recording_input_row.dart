@@ -136,7 +136,10 @@ Widget inputRow(
             child: Column(
               children: [
                 IconButton(
-                  onPressed: addWaypoint,
+                  onPressed: () {
+                    addWaypoint();
+                    stopRecording();
+                  },
                   icon: const Padding(
                     padding: EdgeInsets.all(4.0),
                     child: Icon(
@@ -163,50 +166,50 @@ Widget inputRow(
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Column(
-              children: [
-                IconButton(
-                  onPressed: () {
-                    if (isRecording) {
-                      stopRecording();
-                    } else {
-                      startRecording();
-                    }
-                  },
-                  icon: Padding(
-                    padding: const EdgeInsets.all(4.0),
-                    child: Icon(
-                      recordButtonIcon,
-                      size: 40.0,
-                      color: mini_colors.offWhite,
-                    ),
-                  ),
-                  style: ButtonStyle(
-                      backgroundColor: isRecording
-                          ? MaterialStatePropertyAll(Colors.red[600])
-                          : const MaterialStatePropertyAll(
-                              mini_colors.darkRoyalPurple)),
-                  hoverColor: isRecording
-                      ? Colors.red[300]
-                      : mini_colors.darkRoyalPurpleHighlight,
-                  highlightColor: isRecording
-                      ? Colors.red[300]
-                      : mini_colors.darkRoyalPurpleHighlight,
-                ),
-                Text(
-                  textAlign: TextAlign.center,
-                  "Clear",
-                  style: GoogleFonts.lexend(
-                      textStyle: const TextStyle(
-                          color: mini_colors.notQuiteBlack,
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold)),
-                ),
-              ],
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.all(12.0),
+          //   child: Column(
+          //     children: [
+          //       IconButton(
+          //         onPressed: () {
+          //           if (isRecording) {
+          //             stopRecording();
+          //           } else {
+          //             startRecording();
+          //           }
+          //         },
+          //         icon: Padding(
+          //           padding: const EdgeInsets.all(4.0),
+          //           child: Icon(
+          //             recordButtonIcon,
+          //             size: 40.0,
+          //             color: mini_colors.offWhite,
+          //           ),
+          //         ),
+          //         style: ButtonStyle(
+          //             backgroundColor: isRecording
+          //                 ? MaterialStatePropertyAll(Colors.red[600])
+          //                 : const MaterialStatePropertyAll(
+          //                     mini_colors.darkRoyalPurple)),
+          //         hoverColor: isRecording
+          //             ? Colors.red[300]
+          //             : mini_colors.darkRoyalPurpleHighlight,
+          //         highlightColor: isRecording
+          //             ? Colors.red[300]
+          //             : mini_colors.darkRoyalPurpleHighlight,
+          //       ),
+          //       Text(
+          //         textAlign: TextAlign.center,
+          //         "Clear",
+          //         style: GoogleFonts.lexend(
+          //             textStyle: const TextStyle(
+          //                 color: mini_colors.notQuiteBlack,
+          //                 fontSize: 15,
+          //                 fontWeight: FontWeight.bold)),
+          //       ),
+          //     ],
+          //  ),
+          //),
         ],
       ),
     ],
