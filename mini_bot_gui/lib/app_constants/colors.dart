@@ -8,3 +8,4 @@ const Color royalPurple = Color.fromARGB(255, 65, 44, 92);
 const Color darkRoyalPurple = Color.fromARGB(255, 60, 34, 94);
 const Color darkRoyalPurpleHighlight = Color.fromARGB(255, 93, 64, 132);
 const Color lightRoyalPurpleHighlight = Color.fromARGB(255, 153, 125, 189);
+ 

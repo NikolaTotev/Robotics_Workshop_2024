@@ -7,8 +7,13 @@ import machine
 import utime
 import time
 
-ssid = "MiniBotAP"
-password="Boti24"
+ssid = "MiniBot_AP_6"
+#password="MiniBot4224" #x1
+#password="MiniBot8448" #x2
+#password="MiniBot12672" #x3
+#password="MiniBot16896" #x4
+#password="MiniBot210120" #x5
+password="MiniBot252144" #x6
 
 def inet_aton(addr:str):
     return bytes(map(int, addr.split(".")))

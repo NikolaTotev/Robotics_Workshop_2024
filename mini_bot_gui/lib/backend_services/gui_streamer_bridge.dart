@@ -93,7 +93,7 @@ class GuiStreamerBridge {
   void startRecording() {
     String command = RecordingCommands.rc_start.name;
     print(command);
-    streamer.sendData(command, robotIp, robotPort);
+    //streamer.sendData(command, robotIp, robotPort);
   }
 
   void addWaypoint() {
@@ -105,7 +105,7 @@ class GuiStreamerBridge {
   void stopRecording() {
     String command = RecordingCommands.rc_stop.name;
     print(command);
-    streamer.sendData(command, robotIp, robotPort);
+    //streamer.sendData(command, robotIp, robotPort);
   }
 
   void playRecording() {
