@@ -1,1 +1,1 @@
-# Ocado_Robotics_Workshop_2024
+Robotics_Workshop_2024
